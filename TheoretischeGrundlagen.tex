@@ -1,0 +1,49 @@
+%\input{usepackage.tex}
+%\begin{document}
+\setlength\abovedisplayshortskip{20pt}
+\setlength\belowdisplayshortskip{20pt}
+\setlength\abovedisplayskip{20pt}
+\setlength\belowdisplayskip{20pt}
+\section{Theoretische Grundlagen \cite{wedler}}
+Die Quantisierung der energetischen Zustände eines Moleküls lassen sich in Abhängigkeit von dem benötigten Energiebetrag $E = h \cdot \nu$ zu einer diskreten Anregung verstehen. So entspricht zum Beispiel die benötigte Energie, um ein rotatorisch angeregten Zustand zu induzieren, dem Bereich der Mikrowellenstrahlung, also dem Frequenzbereich von 0.5-100 GHz (abhängig vom betrachteten Molekül). Schwingungsniveaus benötigen hingegen höherenergetische Strahlung um im Allgemeinen angeregt zu werden, also elektromagnetische Wellen im infraroten Spektralbereich. Die elektronische Anregung eines Moleküls benötigt die größte Energiemenge und liegt im Bereich von 1 bis 10eV, was einem Wellenlängenintervall von ungefähr 125 nm bis 1250 nm entspricht. Es ist somit ersichtlich, dass die elektronische Anregung zum großen Teil im Bereich des sichtbaren Lichtes stattfindet.\\
+\begin{equation}
+E_{el} > E_{Vib}> E_{rot}
+\label{eq:EnergieRating}
+\end{equation}
+\\
+Ferner lässt sich sagen, dass bei einer Anregung von Schwingungsniveaus immer auch rotatorische Niveaus angeregt werden, da diese einen kleiner Energiebetrag zur Anregung benötigen. Aus der Modellierung eines zweiatomigen Moleküls mithilfe des starren Rotator wird folgenden Energieausdruck für die rotatorische Energie gefunden : 
+\begin{equation}
+E_{rot}= \frac{h^2}{8 \pi^2 I} J(J+1) = BJ(J+1)
+\end{equation}
+Die konstanten dieser Funktion werden zusammengefasst und als Rotationskonstante $B$ bezeichnet, $J$ stellt die Rotationsquantenzahl da. Der Trägheitsmoment $I$wird beschrieben als : \begin{equation}
+	I = \mu \cdot r^2 \quad\quad\quad \mu = \frac{m_1\cdot m_2}{m_1+m_2}
+\end{equation} 
+Die Schwingungsenergie ergibt sich unter Annahme des harmonischen Oszillators als :
+\begin{equation}
+E_{vib} = hv_0 \left(v+\frac{1}{2}\right)
+\end{equation}
+Hier wird $v_0$ als harmonische Schwingfrequenz und $v$ die Schwingungsquantenzahl. 
+\begin{equation}
+v_0 = \frac{1}{2\pi} \cdot \sqrt{\frac{D}{\mu}} \quad\quad \text{wobei : D = Direktionskonstante}
+\label{eq:harmSchwing}
+\end{equation}Wird also sowohl vibratorischer als auch rotatorischer Teil angeregt, dann folgt die Gesamtenergie als Summe :
+\begin{equation}
+E = E_{rot} + E_{vib}
+\end{equation}
+Eine Änderung der Schwingungsquantenzahl $v$ lässt eine Geometrieänderung resultieren, welche direkten Einfluss auf die Rotationskonstante $B$ nimmt, da diese reziprok mit dem Trägheitsmoments des Moleküls zusammen hängt. Es ergeben sich folglich zwei Rotationskonstanten als $B'_v$ wenn $v=0$ und $B''_v$ wenn $v=1$. Diese Änderung lässt sich mithilfe folgender Gleichung definieren :
+\begin{equation}
+B_v = B_e - \alpha_e(v+\frac{1}{2})
+\end{equation}
+Wobei $\alpha_e$ ein Wichtungskoeffizienten des Einflusses der Geometrieänderung bezogen auf einen Schwingungsübergang beschreibt. Die Energien werden, wie in der Spektroskopie üblich, in Schwingungsthermen dargestellt. Hierfür werden diese mithilfe von $E=hv$ umgeformt. Durch die Auswahlregel für rotatorische Übergänge mit $\Delta J = \pm 1$ folgen zwei disjunkte Möglichkeiten als $R$-Zweig für $\Delta J=1$ sowie als $P$-Zweig mit $\Delta J=-1$. Wird also jetzt die Summe der beiden Energien in Form eines Schwingungsthermes gemäß zuvor getätigter Überlegung für den $P$ und $R$ Zweig berechnet, ergeben sich :
+\begin{equation}
+\tilde{\nu}_R = \tilde{\nu}_0 + 2B_v' + (3B_v'-B_v'')\cdot J +(B_v'-B_v'')\cdot J^2
+\end{equation}
+\begin{equation}
+\tilde{\nu}_P = \tilde{\nu}_0 -(B_v'+ B_v'')\cdot J +(B_v'-B_v'')\cdot J^2
+\end{equation}
+wobei $J \in \mathbb{N}$ im ersten Fall und $J \in \mathbb{N}\setminus\{0\}$ im zweiten Fall.
+\\
+\\
+Wird erneut die harmonische Schwingfrequenz aus Gleichung \ref{eq:harmSchwing} betrachtet, so ist ersichtlich, dass diese umgekehrt Proportional zur Wurzel der reduzierten Masse des betrachteten Systems ist. Liegen also Isotope in der Probe vor, so ändern sich ebenfalls die Ergebnisse der Rotations-Schwingungsübergänge. \\
+\\
+%\end{document}
