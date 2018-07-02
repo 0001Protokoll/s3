@@ -125,23 +125,28 @@ Dies kann man nun nach $r$ umstellen und die entsprechenden Werte für $B$ einse
 r=\sqrt{\frac{h}{8\pi^2\cdot c\cdot \mu \cdot B}}
 \end{equation}
 
-Alle entsprechend den obigen Gleichungen berechneten Werte sind in Tabelle \ref{Zusammenfassung} zusammengefasst. Alle Werte liegen außerhalb des doppelten Fehlerintervalls und sind somit als nicht richtig zu bewerten, jedoch stimmt die Größenordnung. Mögliche Gründe für die Abweichungen könnten Gerätefehler bzw. systematische Fahler in der Regression sein.
+Alle entsprechend den obigen Gleichungen berechneten Werte sind in Tabelle \ref{Zusammenfassung} zusammengefasst. Alle Werte liegen außerhalb des doppelten Fehlerintervalls und sind somit als nicht richtig zu bewerten, jedoch stimmt die Größenordnung. Mögliche Gründe für die Abweichungen können durchGerätefehler bzw. systematische Fehler in der Regression zustande gekommen sein. Gerade die Anpassung durch das quadratische Polnom durch Igor ist nur eine Näherung, dessen Qualität sich jedoch nur schwer bewerten lässt.
 
 \begin{table}
 \label{Zusammenfassung}
 	\caption{Zusammenfassung der berechneten Konstanten aus dem Rotationsschwingungspektrum von CO.  }
 \begin{tabular}{C{0.2\linewidth}|C{0.2\linewidth}|C{0.2\linewidth}|C{0.2\linewidth}}
-Konstante             & Einheit                  & Wert                           & Literatur \\ \hline
+Konstante             & Einheit                  & Wert                           & Literatur\cite{Lit} \\ \hline
 $B_0$                  & [$cm^{-1}$]          & $1.9167 \pm 0.0006$	& $1.68172$   \\
 $B_1$                  & [$cm^{-1}$]          & $1.896 \pm 0.002$   	& $1.66268$   \\
 $B_e $                 & [$cm^{-1}$]          & $1.927 \pm 0.002$   	& $1.69124$   \\
 $\alpha$		& [$cm^{-1}$]       & $0.081 \pm 0.003$   	& $0.01904$   \\
-$r_e$                  & $\SI{}{[\angstrom]}$		& $1.129 \pm 0.006 $  	& $1.206$     \\
+$r_e$                  & $\SI{}{[\angstrom]}$		& $1.129 \pm 0.0012 $  	& $1.206$     \\
 $r_0$                  & $\SI{}{[\angstrom]} $		& $1.132 \pm 0.004$  	 & $1.209$     \\
 $r_1$                  & $\SI{}{[\angstrom]}$ 		& $1.138 \pm 0.004$  	 & $1.216$    \\
 $\nu_0$	&[$cm^{-1}$]          & $2143.40 \pm 0.03$&
 \end{tabular}
 \end{table}
+
+
+Da die Rotationskonstanten additiv bzw subtraktiv miteinander verknüpft sind, entsprechen die Fehler der Addition der aboluten Fehler, welche aus den Anpassungen in Igor entnommen wurden. 
+
+
 
 %\end{document}
 
